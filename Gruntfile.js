@@ -6,7 +6,6 @@
 // 'test/spec/{,*/}*.js'
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
-
 module.exports = function (grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
@@ -269,16 +268,16 @@ module.exports = function (grunt) {
                 src: '{,*/}*.css'
             }
         },
-        modernizr: {
-            devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-            outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
-            files: [
-                '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                '<%= yeoman.dist %>/styles/{,*/}*.css',
-                '!<%= yeoman.dist %>/scripts/vendor/*'
-            ],
-            uglify: true
-        },
+        // modernizr: {
+        //     devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
+        //     outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
+        //     files: [
+        //         '<%= yeoman.dist %>/scripts/{,*/}*.js',
+        //         '<%= yeoman.dist %>/styles/{,*/}*.css',
+        //         '!<%= yeoman.dist %>/scripts/vendor/*'
+        //     ],
+        //     uglify: true
+        // },
         concurrent: {
             server: [
                 'compass',
@@ -332,14 +331,14 @@ module.exports = function (grunt) {
         'concat',
         'cssmin',
         'uglify',
-        'modernizr',
+        //'modernizr',
         'copy:dist',
         'rev',
         'usemin'
     ]);
 
     grunt.registerTask('default', [
-        'jshint',
+        //'jshint',
         'test',
         'build'
     ]);
