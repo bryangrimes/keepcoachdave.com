@@ -79,9 +79,28 @@ body {
 }
 
 
-.jumbotron {
+.callout-lg {
+  border-radius: 6px;
+  padding-left: 60px;
+  padding-right: 60px;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 8px;
+  font-size: 26px;
+  font-weight: 500;
+  color: $callout-color;
+  background-color: #eeeeee;
+}
+.callout-sm {
+  border-radius: 6px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  padding:4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $callout-color;
+  background-color: #eeeeee;
 }
 
 
@@ -92,21 +111,27 @@ body {
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
+
+  /* Center align the text within the three columns below the carousel */
+  .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-weight: normal;
+  }
+
+  .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
+.citation {
+  font-size: 8pt;
 }
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 
 /* Featurettes
 ------------------------- */
@@ -134,24 +159,6 @@ body {
   .marketing {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-left:  15px;
-    padding-right: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-left:  0;
-    padding-right: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
   }
 
   /* Bump up size of carousel content */
