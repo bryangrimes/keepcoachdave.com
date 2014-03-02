@@ -23,6 +23,37 @@ body {
 }
 
 
+// EXTENDS
+
+.donate-btn {
+  @extend .btn;
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+  color: #1B1B1B;
+  margin: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  cursor: pointer;
+  height: 40px;
+  min-width: 167px;
+  padding: 0px 0 0 0;
+  border: #c49530 1px solid;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, .2);
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, .2);
+  background:-moz-linear-gradient(top, #fee045 5%, #fecb2a 100%);
+  background:-webkit-linear-gradient(top, #fee045 5%, #fecb2a 100%);
+  background:-o-linear-gradient(top, #fee045 5%, #fecb2a 100%);
+  background:-ms-linear-gradient(top, #fee045 5%, #fecb2a 100%);
+  background:linear-gradient(to bottom, #fee045 5%, #fecb2a 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee045', endColorstr='#fecb2a',GradientType=0);
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -54,7 +85,7 @@ body {
 
 .carousel {
   height: $carousel-height;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -71,7 +102,7 @@ body {
 }
 
 .carousel-inner > .item > img {
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
@@ -81,11 +112,14 @@ body {
 
 .callout-lg {
   border-radius: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 60px;
   padding-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   text-align: center;
-  padding: 8px;
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 500;
   color: $callout-color;
   background-color: #eeeeee;
@@ -137,15 +171,20 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
   border-top: 1px solid $divider-color;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+.featurette {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
 }
 
 
