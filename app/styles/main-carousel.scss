@@ -54,28 +54,15 @@ body {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee045', endColorstr='#fecb2a',GradientType=0);
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
 
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
+#message {
+  text-align: center;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
+#dave-img {
+  height: 200;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -209,11 +196,6 @@ footer {
     text-align: center;
   }
 }
-
-#dave-img {
-  height: 200;
-}
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
